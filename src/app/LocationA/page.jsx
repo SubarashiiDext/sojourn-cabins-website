@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Cards from "../components/cards/page";
+import Cards from "../../components/cards/page";
 
 export default function LocationA() {
   return (
@@ -15,12 +15,12 @@ export default function LocationA() {
       </div> */}
       <div className="w-[100%] mt-2 mb-2">
         <div className=" space-x-1 mx-auto md:w-[80%] w-[100%] justify-between flex md:flex-row md:items-center items-center flex-col">
-          <div className="h-[43px] w-[100px] m-1 rounded border-2 border-black ">Any one</div>
-          
+          <div className="h-[43px] w-[100px] my-1 rounded border-2 border-black-400 ">
+            Any one
+          </div>
+
           <div className="flex space-x-1 w-[95%] justify-between items-center m-1">
-            <input className="w-[85%] h-[43px] text rounded border-2 border-black py-1 px-2">
-              
-            </input>
+            <input className="w-[85%] h-[43px] text rounded border-2 border-black-400 py-1 px-2"></input>
             <button className="h-[43px] w-[120px] rounded  bg-blue-600 text-white py-1 px-2">
               Apply Filter
             </button>
@@ -28,9 +28,7 @@ export default function LocationA() {
         </div>
       </div>
 
-      
-      <Cards/>
-
+      <Cards />
     </div>
   );
 }
