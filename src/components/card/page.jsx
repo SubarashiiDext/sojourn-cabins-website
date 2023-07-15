@@ -6,8 +6,8 @@ import {MdOutlineLocationOn} from "react-icons/md"
 export default function Card() {
   return (
     <div>
-      <div className='flex items-center justify-center '>
-        <div className='mb-2 px-2 py-2 border-2 border-black-400  rounded'>
+      <div className='flex items-center justify-center  '>
+        <div className='mb-2 px-2 py-2 border-2 border-black-400  rounded shadow-2xl hover:border-blue-300'>
           
           <Image className=' m-0 rounded' src="/asset/cabin1.png" alt="" width={282} height={336}/>
           
@@ -21,8 +21,8 @@ export default function Card() {
             </div>
             
           </div>
-          <div className='flex justify-center items-center '>
-            <button className=" bg-blue-600 font-bold  py-2 px-3 rounded hover:bg-blue-300 hover:text-black transition duration-300 ">
+          <div className='flex justify-end items-center '>
+            <button className=" bg-blue-600 font-bold  py-2 px-3 rounded text-white hover:bg-blue-300 hover:text-black transition duration-300 ">
               View Cabin
             </button>
           </div>

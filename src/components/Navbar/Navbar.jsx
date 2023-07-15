@@ -24,7 +24,7 @@ export default function Navbar() {
       <nav className=" bg-black z-99 w-[100%] sticky top-0 text-white">
         <div className="flex items-center justify-between  text-white py-5 w-[80%] mx-auto ">
           <div >
-            <Image src="/Sojourn-logo.png" alt="logo" width={138} height={44} />
+            <Image src="/asset/Sojourn-logo.png" alt="logo" width={138} height={44} />
           </div>
 
           <div className=" items-center space-x-5 hidden lg:flex">
