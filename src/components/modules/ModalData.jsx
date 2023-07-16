@@ -1,4 +1,4 @@
-import valentine from "../../public/assets/valentine.jpg";
+import valentine from "../../../public/asset/valentine.jpg";
 
 const ModalData = [
   {

@@ -1,33 +1,17 @@
 import React from "react";
 
 const OurRateCard = ({
-  price,
   location,
   cabins,
-  sand_cabin,
-  sea_cabin,
-  weekends,
-  weekdays,
-  sun_cabin,
   extras,
-  single_booking,
-  group_booking_one,
-  group_booking_two,
-  one_night_stay,
-  massage,
-  outdoor_movie,
-  sax_player,
-  type,
-  quantity,
-  category,
-  full_day,
+
 }) => {
   return (
     <div>
       <div className="hidden md:block">
         <div className="flex flex-row justify-around  text-[#06f] text-[24px] font-semibold mb-[-50px] mt-14">
-          <h1 className="ml-[-220px]">CABINS</h1>
-          <h1 className="ml-[-185px]">EXTRAS</h1>
+          <h1 className="ml-[-220px]"> CABINS {location}</h1>
+          <h1 className="ml-[-185px]">EXTRAS {location}</h1>
         </div>
       </div>
 

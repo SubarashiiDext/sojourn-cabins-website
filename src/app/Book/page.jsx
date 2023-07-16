@@ -1,25 +1,50 @@
+"use client";
 import OurRateCard from "@/components/Card/OurRateCard";
+import BookingForms from "@/components/Forms/BookingForms";
 import ContainerWrapper from "@/components/UI/ContainerWrapper ";
 import RateSearch from "@/components/UI/RateSearch";
 import UiWrapper from "@/components/UI/UiWrapper";
-import React from "react";
+import { AllLocations, cabins, extras } from "@/utils/data";
+import React, { useState } from "react";
 
 export default function Book() {
+  const [data, setData] = useState(AllLocations[0]);
+  const [query, setQuery] = useState("");
+
+  const search = (query) => {
+    const newLocation = AllLocations.find((location) =>
+      location.location.toLowerCase().includes(query.toLowerCase())
+    );
+    setQuery(query);
+    setData(newLocation);
+  };
   return (
     <>
       <div>
         <ContainerWrapper>
           <h1 className="font-semibold text-xl">Book your stay</h1>
           <div>
-            <UiWrapper>{/* <OurRateCard /> */}</UiWrapper>
+            <UiWrapper>
+              <BookingForms />
+            </UiWrapper>
           </div>
 
           <div>
-            <RateSearch />
+            <RateSearch value={query} onChange={search} />
           </div>
 
           <div>
-            <UiWrapper></UiWrapper>
+            <UiWrapper>
+              {data ? (
+                <OurRateCard
+                  cabins={data.cabins}
+                  extras={data.extras}
+                  location={data.location}
+                />
+              ) : (
+                <p>No Data</p>
+              )}
+            </UiWrapper>
           </div>
         </ContainerWrapper>
       </div>
