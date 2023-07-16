@@ -13,7 +13,7 @@ const ModalCard = ({ imgURL, title, promo, description }) => {
             <Image src="/assets/valentine.jpg" fill={true} alt="" />
           </div> */}
 
-          <Image src="/assets/valentine.jpg" width={800} height={800} alt="" />
+          <Image src="/asset/valentine.jpg" width={800} height={800} alt="" />
           {/* right section  */}
           <div className="text-center">
             <h1 className="text-black font-bold text-2xl">The Valentine day</h1>

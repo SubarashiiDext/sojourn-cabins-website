@@ -42,7 +42,9 @@ export default function Book() {
                   location={data.location}
                 />
               ) : (
-                <p>No Data</p>
+                <p className="text-center py-4 text-3xl font-semibold">
+                  No Data
+                </p>
               )}
             </UiWrapper>
           </div>
