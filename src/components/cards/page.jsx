@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../card/page";
+import Card from "../Card/page";
 
 export default function Cards() {
   return (
