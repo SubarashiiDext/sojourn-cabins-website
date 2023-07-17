@@ -76,26 +76,26 @@ export const a_extras = {
 export const b_cabins = {
   sand_cabin: {
     weekdays: {
-      price: "$209",
+      price: "$309",
     },
     weekends: {
-      price: "$229",
+      price: "$329",
     },
   },
   sea_cabin: {
     weekdays: {
-      price: "$209",
+      price: "$309",
     },
     weekends: {
-      price: "$229",
+      price: "$329",
     },
   },
   sun_cabin: {
     weekdays: {
-      price: "$209",
+      price: "$309",
     },
     weekends: {
-      price: "$229",
+      price: "$329",
     },
   },
 };
@@ -105,10 +105,10 @@ export const b_extras = {
     quantity: "2",
     category: {
       full_day: {
-        price: "$150",
+        price: "$350",
       },
       one_night_stay: {
-        price: "$130",
+        price: "$330",
       },
     },
   },
@@ -117,10 +117,10 @@ export const b_extras = {
     quantity: "4",
     category: {
       full_day: {
-        price: "$250",
+        price: "$350",
       },
       one_night_stay: {
-        price: "$215",
+        price: "$315",
       },
     },
   },
@@ -132,7 +132,7 @@ export const b_extras = {
         price: "$350",
       },
       one_night_stay: {
-        price: "$295",
+        price: "$395",
       },
     },
   },
@@ -151,26 +151,26 @@ export const b_extras = {
 export const c_cabins = {
   sand_cabin: {
     weekdays: {
-      price: "$209",
+      price: "$409",
     },
     weekends: {
-      price: "$229",
+      price: "$429",
     },
   },
   sea_cabin: {
     weekdays: {
-      price: "$209",
+      price: "$409",
     },
     weekends: {
-      price: "$229",
+      price: "$429",
     },
   },
   sun_cabin: {
     weekdays: {
-      price: "$209",
+      price: "$409",
     },
     weekends: {
-      price: "$229",
+      price: "$429",
     },
   },
 };
@@ -180,10 +180,10 @@ export const c_extras = {
     quantity: "2",
     category: {
       full_day: {
-        price: "$150",
+        price: "$450",
       },
       one_night_stay: {
-        price: "$130",
+        price: "$430",
       },
     },
   },
@@ -192,10 +192,10 @@ export const c_extras = {
     quantity: "4",
     category: {
       full_day: {
-        price: "$250",
+        price: "$450",
       },
       one_night_stay: {
-        price: "$215",
+        price: "$415",
       },
     },
   },
@@ -204,10 +204,10 @@ export const c_extras = {
     quantity: "6",
     category: {
       full_day: {
-        price: "$350",
+        price: "$450",
       },
       one_night_stay: {
-        price: "$295",
+        price: "$495",
       },
     },
   },

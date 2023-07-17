@@ -1,11 +1,6 @@
 import React from "react";
 
-const OurRateCard = ({
-  location,
-  cabins,
-  extras,
-
-}) => {
+const OurRateCard = ({ location, cabins, extras }) => {
   return (
     <div>
       <div className="hidden md:block">

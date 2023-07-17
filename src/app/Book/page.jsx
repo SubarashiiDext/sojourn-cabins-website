@@ -1,6 +1,7 @@
 "use client";
 import OurRateCard from "@/components/Card/OurRateCard";
 import BookingForms from "@/components/Forms/BookingForms";
+import BookingAlert from "@/components/PromoAlert/BookingAlert";
 import ContainerWrapper from "@/components/UI/ContainerWrapper ";
 import RateSearch from "@/components/UI/RateSearch";
 import UiWrapper from "@/components/UI/UiWrapper";
@@ -21,6 +22,9 @@ export default function Book() {
   return (
     <>
       <div>
+        <BookingAlert />
+      </div>
+      <div>
         <ContainerWrapper>
           <h1 className="font-semibold text-xl">Book your stay</h1>
           <div>
@@ -30,7 +34,9 @@ export default function Book() {
           </div>
 
           <div>
-            <RateSearch value={query} onChange={search} />
+            <div>
+              <RateSearch value={query} onChange={search} />
+            </div>
           </div>
 
           <div>
