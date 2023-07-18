@@ -14,7 +14,7 @@ export default function LocationA() {
       <div className=" relative w-full h-96   overflow-hidden bg-gray-600">
         <Image
           className="object-cover object-center absolute mix-blend-overlay"
-          src="/asset/hero section A.png"
+          src="/asset/hero-sectionA.png"
           alt="Bg Img"
           fill={true}
         />
