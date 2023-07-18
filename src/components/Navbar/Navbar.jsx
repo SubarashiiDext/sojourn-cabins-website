@@ -67,7 +67,7 @@ export default function Navbar() {
               <Link href= '/Book' className="hover:text-grey-400 py-2 lg:hidden">BOOK</Link>
               <Link href= '/CabinListings' className="hover:text-grey-400 py-2 lg:hidden">CABIN LISTINGS</Link>
               <Link href= '/Terms-&-Condition' className="hover:text-grey-400 py-2 lg:hidden">TERMS & CONDITION</Link>
-              <ul className="flex flex-col  items-center space-x-2">
+              <ul className="flex flex-col  items-center gap-2">
                 <li>Login</li>
 
                 <li className=" bg-blue-600 font-bold py-1 px-3 rounded hover:bg-blue-300 hover:text-black transition duration-300">
