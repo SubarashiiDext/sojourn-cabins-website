@@ -20,8 +20,8 @@ export default function Navbar() {
   };
 
   return (
-    <div>
-      <nav className=" bg-black z-99 w-[100%] sticky top-0 text-white">
+    <div className="absolute z-30">
+      <nav className=" bg-black z-99 w-[100%] fixed top-0 text-white">
         <div className="flex items-center justify-between  text-white py-5 w-[80%] mx-auto ">
           <div >
             <Image src="/asset/Sojourn-logo.png" alt="logo" width={138} height={44} />
@@ -29,7 +29,7 @@ export default function Navbar() {
 
           <div className=" items-center space-x-5 hidden lg:flex">
           
-            <div className=" text-white flex space-x-4 ">
+            <div className=" text-white flex space-x-4 transition-all ease-in duration-500 ">
               <Link href= '/Home' className="hover:bg-grey-400">HOME</Link>
               <Link href= '/About' className="hover:bg-grey-400">ABOUT</Link>
               <Link href= '/Book' className="hover:bg-grey-400">BOOK</Link>
@@ -60,7 +60,7 @@ export default function Navbar() {
 
         </div>
           {open && (
-            <div className="  flex flex-col items-center transition duration-700 text-white lg:hidden min-h-[100vh] pt-4" onClick={handleClick}>
+            <div className="  flex flex-col items-center  text-white lg:hidden min-h-[100vh] pt-4" onClick={handleClick}>
               {!open ? "" : ""}
               <Link href= '/Home' className="hover:text-grey-400 py-2 lg:hidden">HOME</Link>
               <Link href= '/About' className="hover:text-grey-400 py-2 lg:hidden">ABOUT</Link>

@@ -10,15 +10,15 @@ import { BsFillCaretUpFill } from "react-icons/bs";
 export default function LocationA() {
   const [count, setCount] = useState(1);
   return (
-    <div>
-      <div className=" relative w-full h-96   overflow-hidden bg-gray-600">
+    <div className="pt-20">
+      <div className=" relative w-full h-96   overflow-hidden bg-gray-600 z-20 ">
         <Image
-          className="object-cover object-center absolute mix-blend-overlay"
+          className="object-cover object-center absolute mix-blend-overlay z-10 "
           src="/asset/hero-sectionA.png"
           alt="Bg Img"
           fill={true}
         />
-        <div className=" h-96  flex items-center justify-center flex-col px-3 py-20 sm:py-auto">
+        <div className=" h-96  flex items-center justify-center flex-col px-3 py-20 sm:py-auto z-20">
           <h1 className="text-orange-500 font-bold sm:text-6xl text-5xl">
             KASOA
           </h1>
@@ -56,7 +56,9 @@ export default function LocationA() {
       </div>
 
       <Cards />
+      
 
+      <Link href= "LocationA/search-results-page">Results</Link>
       
     </div>
   );
