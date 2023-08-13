@@ -61,7 +61,7 @@ export default function Navbar() {
         </div>
           {open && (
             <div className="  flex flex-col items-center  text-white lg:hidden min-h-[100vh] pt-4" onClick={handleClick}>
-              {!open ? "" : ""}
+              
               <Link href= '/Home' className="hover:text-grey-400 py-2 lg:hidden">HOME</Link>
               <Link href= '/About' className="hover:text-grey-400 py-2 lg:hidden">ABOUT</Link>
               <Link href= '/Book' className="hover:text-grey-400 py-2 lg:hidden">BOOK</Link>
