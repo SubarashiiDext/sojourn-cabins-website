@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import ModalData from "@/components/modules/ModalData";
+// import ModalData from "@/components/modules/ModalData";
 import Link from "next/link";
 
 const ModalCard = ({ imgURL, title, promo, description }) => {
