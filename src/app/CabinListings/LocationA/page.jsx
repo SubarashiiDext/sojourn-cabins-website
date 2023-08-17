@@ -4,8 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Cards from "../../../components/cards/page";
-import { BsFillCaretDownFill } from "react-icons/bs";
-import { BsFillCaretUpFill } from "react-icons/bs";
+import { BsFillCaretDownFill,BsFillCaretUpFill } from "react-icons/bs";
 
 export default function LocationA() {
   const [count, setCount] = useState(1);

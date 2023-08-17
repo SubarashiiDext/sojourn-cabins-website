@@ -29,7 +29,7 @@ export default function Card({id, location, price, people, name, image, thumbnai
             
           </div>
           <div className='flex justify-end items-center '>
-            <button className=" bg-blue-600 font-bold  py-2 px-3 rounded text-white hover:bg-blue-300 hover:text-black transition duration-300 ">
+            <button className=" bg-[#0066FF] font-bold  py-2 px-3 rounded text-white hover:bg-blue-400   duration-400 ">
               View Cabin
             </button>
           </div>
