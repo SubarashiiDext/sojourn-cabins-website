@@ -63,13 +63,6 @@ export default function Book() {
             {/* <UiWrapper>
               <PackageSearch />
             </UiWrapper> */}
-
-            <UiWrapper>
-              <jj />
-            </UiWrapper>
-            <UiWrapper>
-              {/* <DatePicker onChange={onChange} picker="month" /> */}
-            </UiWrapper>
           </div>
         </ContainerWrapper>
       </div>
