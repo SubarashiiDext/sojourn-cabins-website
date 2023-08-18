@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <div className="absolute z-30">
-      <nav className=" bg-black z-99 w-[100%] fixed top-0 text-white">
+      <nav className=" bg-black z-99 w-[100%] fixed top-0 text-white font-bold">
         <div className="flex items-center justify-between  text-white py-5 w-[80%] mx-auto ">
           <div >
             <Image src="/asset/Sojourn-logo.png" alt="logo" width={138} height={44} />
@@ -38,13 +38,13 @@ export default function Navbar() {
             </div>
             
 
-            <div className="flex items-center space-x-5">
+            <div className="flex items-center space-x-5 font-bold">
               <span> | </span>
               <ul className="flex items-center space-x-2">
-                <li>Login</li>
+                <li>LOGIN</li>
 
                 <li className=" bg-blue-600 font-bold py-1 px-3 rounded hover:bg-blue-300 hover:text-black transition duration-300">
-                  Sign Up
+                  SIGN UP
                 </li>
               </ul>
             </div>
@@ -60,7 +60,7 @@ export default function Navbar() {
 
         </div>
           {open && (
-            <div className="  flex flex-col items-center  text-white lg:hidden min-h-[100vh] pt-4" onClick={handleClick}>
+            <div className="  flex flex-col items-center font-bold  text-white lg:hidden min-h-[100vh] pt-4" onClick={handleClick}>
               
               <Link href= '/Home' className="hover:text-grey-400 py-2 lg:hidden">HOME</Link>
               <Link href= '/About' className="hover:text-grey-400 py-2 lg:hidden">ABOUT</Link>
@@ -68,10 +68,10 @@ export default function Navbar() {
               <Link href= '/CabinListings' className="hover:text-grey-400 py-2 lg:hidden">CABIN LISTINGS</Link>
               <Link href= '/Terms-&-Condition' className="hover:text-grey-400 py-2 lg:hidden">TERMS & CONDITION</Link>
               <ul className="flex flex-col  items-center gap-2">
-                <li>Login</li>
+                <li>LOGIN</li>
 
                 <li className=" bg-blue-600 font-bold py-1 px-3 rounded hover:bg-blue-300 hover:text-black transition duration-300">
-                  Sign Up
+                  SIGN UP
                 </li>
               </ul>
           </div>

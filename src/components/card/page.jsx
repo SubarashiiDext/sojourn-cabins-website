@@ -10,7 +10,7 @@ export default function Card({id, location, price, people, name, image, thumbnai
 
     
       <div className='flex items-center justify-center  '>
-        <div className='mb-2 px-2 py-2 border-2 border-black-400  rounded shadow-2xl hover:border-blue-300'>
+        <div className='mb-2 px-2 py-2 border-2 border-gray-200  rounded shadow-md hover:border-gray-100 hover:shadow-lg transition duration-200'>
           <div className='rounded  overflow-hidden h-40  bg-slate-400'>
             <Image className='object-cover object-center rounded h-40' src={thumbnail} alt="" width={282} height={336}/>
           </div>

@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import {MdOutlineCancel, MdOutlineLocationOn} from 'react-icons/md';
 import {CiCalendar} from 'react-icons/ci'
@@ -98,13 +99,13 @@ export default function searchResults() {
           </div>
         </div>
 
-        <div className='border shadow-xl flex items-center justify-between p-3 rounded  my-5'>
-          <div className='flex flex-1  flex-col justify-between sm:flex-row sm:justify-between'>
+        <div className='border shadow-md hover:shadow-xl transition duration-200 flex items-center justify-between p-3 rounded  my-5'>
+          <div className='flex flex-1  flex-col justify-between items-center sm:flex-row sm:justify-between'>
             <div className='text-center'>
               <span className='font-bold'>2</span> Cabin(s) have been selected: 
             </div>
 
-            <div className='flex flex-1 sm:justify-between justify-evenly'>
+            <div className='flex flex-1 items-center gap-1 sm:justify-between sm:flex-row flex-col justify-center  '>
               <span className='font-bold ml-1'><span>4</span> or less people</span> 
 
               <button className='py-1 px-3 rounded bg-[#0066FF] text-white font-bold hover:bg-blue-400 duration-300'>
