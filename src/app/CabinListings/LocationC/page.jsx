@@ -7,7 +7,7 @@ import Cards from "../../../components/cards/page";
 import LocationSearch from "@/components/Location-search/page";
 
 
-export default function LocationA() {
+export default function LocationC() {
   const [count, setCount] = useState(1);
   return (
     <div className="pt-20">
@@ -20,10 +20,10 @@ export default function LocationA() {
         />
         <div className=" h-96  flex items-center justify-center flex-col px-3 py-20 sm:py-auto z-20">
           <h1 className="text-orange-500 font-bold sm:text-6xl text-5xl">
-            KASOA
+            TAKORADI
           </h1>
           <h2 className="text-white text-center font-semibold sm:text-3xl text-xl">
-            Kasoa formerly known as Odupongkpehe, is a peri-urban town in the
+            Takoradi formerly known as Odupongkpehe, is a peri-urban town in the
             Awutu Senya East Municipal District of the Central region of Ghana.
           </h2>
         </div>
@@ -42,3 +42,4 @@ export default function LocationA() {
     </div>
   );
 }
+
