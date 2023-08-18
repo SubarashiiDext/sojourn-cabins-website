@@ -5,10 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Home from "@/app/Home/page";
-import About from "@/app/About/page";
-import Book from "@/app/Book/page";
-import CabinListings from "@/app/CabinListings/page";
+
 
 
 
@@ -30,7 +27,7 @@ export default function Navbar() {
           <div className=" items-center space-x-5 hidden lg:flex">
           
             <div className=" text-white flex space-x-4 transition-all ease-in duration-500 ">
-              <Link href= '/Home' className="hover:bg-grey-400">HOME</Link>
+              <Link href= '/' className="hover:bg-grey-400">HOME</Link>
               <Link href= '/About' className="hover:bg-grey-400">ABOUT</Link>
               <Link href= '/Book' className="hover:bg-grey-400">BOOK</Link>
               <Link href= '/CabinListings' className="hover:bg-grey-400">CABIN LISTINGS</Link>
@@ -62,7 +59,7 @@ export default function Navbar() {
           {open && (
             <div className="  flex flex-col items-center font-bold  text-white lg:hidden min-h-[100vh] pt-4" onClick={handleClick}>
               
-              <Link href= '/Home' className="hover:text-grey-400 py-2 lg:hidden">HOME</Link>
+              <Link href= '/' className="hover:text-grey-400 py-2 lg:hidden">HOME</Link>
               <Link href= '/About' className="hover:text-grey-400 py-2 lg:hidden">ABOUT</Link>
               <Link href= '/Book' className="hover:text-grey-400 py-2 lg:hidden">BOOK</Link>
               <Link href= '/CabinListings' className="hover:text-grey-400 py-2 lg:hidden">CABIN LISTINGS</Link>
