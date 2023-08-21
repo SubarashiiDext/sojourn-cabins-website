@@ -5,10 +5,6 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Home from "@/app/Home/page";
-import About from "@/app/About/page";
-import Book from "@/app/Book/page";
-import CabinListings from "@/app/CabinListings/page";
 
 
 
