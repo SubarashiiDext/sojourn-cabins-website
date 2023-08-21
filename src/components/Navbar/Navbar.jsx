@@ -44,7 +44,7 @@ export default function Navbar() {
 
               <Link href= '/' className="hover:bg-grey-400">HOME</Link>
               <Link href= '/About' className="hover:bg-grey-400">ABOUT</Link>
-              <Link href="#"
+              <Link href="/Book"
                 onClick={() => setShowModal(true)} 
                 className="hover:bg-grey-400">BOOK</Link>
               <Link href= '/CabinListings' className="hover:bg-grey-400">CABIN LISTINGS</Link>
@@ -78,10 +78,9 @@ export default function Navbar() {
               
               <Link href= '/' className="hover:text-grey-400 py-2 lg:hidden">HOME</Link>
               <Link href= '/About' className="hover:text-grey-400 py-2 lg:hidden">ABOUT</Link>
-              <Link href="#"
+              <Link href="/Book"
                 className="hover:text-grey-400 py-2 lg:hidden"
-                onClick={() => setShowModal(true)} 
-                className="hover:text-grey-400 py-2 lg:hidden">BOOK</Link>
+                onClick={() => setShowModal(true)} >BOOK</Link>
               <Link href= '/CabinListings' className="hover:text-grey-400 py-2 lg:hidden">CABIN LISTINGS</Link>
               <Link href= '/Terms-&-Condition' className="hover:text-grey-400 py-2 lg:hidden">TERMS & CONDITION</Link>
               <ul className="flex flex-col  items-center gap-2">
