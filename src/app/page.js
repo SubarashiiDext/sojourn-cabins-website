@@ -15,7 +15,7 @@ import FaqSection from "../components/Home/FaqSection";
 export default function Home() {
   return (
 
-    <div className="pt-20">
+    <div>
       <div className="my-8 relative w-full h-[calc(100vh-5rem)] overflow-hidden bg-gray-600 space-y-2" >
         <Image className="my-4 object-cover object-center absolute mix-blend-overlay" src="/asset/coverImage.jpg" alt="Bg Img" fill={true} />
         <div className="mb-4 absolute  md:w-1/3 top-1/2 mx-12 md:left-24 -translate-y-1/2 text-white flex flex-col items-start justify-center">
