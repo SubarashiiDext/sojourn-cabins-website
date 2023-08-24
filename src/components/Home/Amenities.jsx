@@ -54,7 +54,7 @@ const AmenitiesCard = ({ ...props }) => {
     return (
         <li
             key={id}
-            className="shadow-xl  flex flex-col items-center justify-center  mr-4 overflow-hidden  "
+            className="shadow-lg min-w-[380px] flex flex-col items-center justify-center mr-4 overflow-x-hidden"
         >
             <div className="w-full overflow-hidden p-1 rounded-md border border-solid border-black/20">
                 <Image
@@ -62,23 +62,23 @@ const AmenitiesCard = ({ ...props }) => {
                     width={300}
                     height={300}
                     alt="title"
-                    className="w-full h-full object-cover object-center rounded-8xs"
+                    className="w-full h-full object-cover object-center rounded-md"
                 />
             </div>
-            <Link href={link}><h3 className="mt-2 text-sm font-medium hover:text-blue-500 transition duration-300">{title}</h3></Link>
+            <Link href={link}><h3 className="mt-2 text-xl font-medium hover:text-blue-500 transition duration-300">{title}</h3></Link>
         </li>
     );
 };
 
 const Amenities = () => {
     return (
-        <section className="mt-14 mx-24 flex flex-col items-start overflow-hidden">
+        <section className="mt-14 mx-5 md:mx-24 flex flex-col items-start overflow-x-hidden">
             <div className="w-full flex items-center justify-between pr-32">
                 <h2 className="text-xl font-semibold text-black/80 capitalize">
                     Our Amenities
                 </h2>
             </div>
-            <ul className="mt-6 w-full flex items-stretch justify-start overflow-x-scroll scroll-m-10 no-scrollbar">
+            <ul className="mt-6 w-full flex items-stretch justify-start overflow-x-auto md:overflow-x-scroll scroll-m-10">
                 {cabinData.map((item) => {
                     return <AmenitiesCard key={item.id} {...item} />;
                 })}

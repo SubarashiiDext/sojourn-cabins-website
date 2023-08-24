@@ -36,41 +36,41 @@ const Gallery = () => {
         The sojourn gallery
       </h2>
       <div className="bg-beige px-24 mt-6 w-full py-8 grid grid-cols-2 grid-rows-2 gap-4">
-        <div className="w-full col-span-1 row-span-1 p-1 rounded-8xs border border-solid border-black/20 ">
+        <div className="w-full col-span-1 row-span-1 p-1 rounded-md border border-solid border-black/20 ">
           <Image
             alt="alt text" src={img1}
-            className="w-full h-full cursor-pointer object-cover object-center rounded-8xs"
+            className="w-full h-full cursor-pointer object-cover object-center rounded-md"
             onClick={() => setSelectedImage(img1)}
           />
         </div>
 
 
         <div className="grid grid-cols-2 grid-rows-2 gap-4  col-span-1 row-span-1">
-          <div className="w-full p-1 rounded-8xs border border-solid border-black/20 ">
+          <div className="w-full p-1 rounded-md border border-solid border-black/20 ">
             <Image
               alt="alt text" src={img2}
-              className="w-full h-full object-cover object-center rounded-8xs cursor-pointer"
+              className="w-full h-full object-cover object-center rounded-md cursor-pointer"
               onClick={() => setSelectedImage(img2)}
             />
           </div>
-          <div className="w-full p-1 rounded-8xs border border-solid border-black/20 ">
+          <div className="w-full p-1 rounded-md border border-solid border-black/20 ">
             <Image
               alt="alt text" src={img3}
-              className="w-full h-full object-cover object-center rounded-8xs cursor-pointer"
+              className="w-full h-full object-cover object-center rounded-md cursor-pointer"
               onClick={() => setSelectedImage(img3)}
             />
           </div>
-          <div className="w-full p-1 rounded-8xs border border-solid border-black/20 ">
+          <div className="w-full p-1 rounded-md border border-solid border-black/20 ">
             <Image
               alt="alt text" src={img4}
-              className="w-full h-full object-cover object-center rounded-8xs cursor-pointer"
+              className="w-full h-full object-cover object-center rounded-md cursor-pointer"
               onClick={() => setSelectedImage(img4)}
             />
           </div>
-          <div className="w-full p-1 rounded-8xs border border-solid border-black/20 ">
+          <div className="w-full p-1 rounded-md border border-solid border-black/20 ">
             <Image
               alt="alt text" src={img5}
-              className="w-full h-full object-cover object-center rounded-8xs cursor-pointer"
+              className="w-full h-full object-cover object-center rounded-md cursor-pointer"
               onClick={() => setSelectedImage(img5)}
             />
           </div>

@@ -36,9 +36,9 @@ const LocationCard = ({ ...props }) => {
   const { id, title, description, img, link } = props;
 
   return (
-    <li key={id} className="shadow-lg min-w-[550px] flex items-center justify-center p-2 mr-4 overflow-hidden rounded-md border border-solid border-black/20">
+    <li key={id} className="shadow-xl min-w-[550px] flex items-center justify-center p-2 mr-4 overflow-hidden rounded-md border border-solid border-black/20">
       <div className="w-1/2 aspect-square overflow-hidden">
-        <Image src={img} alt="title" width={300} height={300} className="w-full h-full object-cover object-center rounded-8xs" />
+        <Image src={img} alt="title" width={300} height={300} className="w-full h-full object-cover object-center rounded-md" />
       </div>
       <div className="w-1/2 flex flex-col mx-5">
         <Link href={link}><h3 className="text-xl font-semibold">{title}</h3></Link>

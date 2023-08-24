@@ -52,9 +52,9 @@ const CabinCard = ({ ...props }) => {
     const { id, img, title, guests, link, price, location, rating } = props;
 
     return (
-        <li key={id} className="shadow-xl min-w-[330px] flex flex-col items-center justify-center p-2 mr-4 overflow-hidden rounded-8xs border border-solid border-black/20">
+        <li key={id} className="shadow-xl min-w-[380px] flex flex-col items-center justify-center p-2 mr-4 overflow-hidden rounded-md border border-solid border-black/20">
             <div className="w-full aspect-video overflow-hidden">
-                <Image src={img} width={300} height={300} alt="title" className="w-full h-full object-cover object-center rounded-8xs" />
+                <Image src={img} width={300} height={300} alt="title" className="w-full h-full object-cover object-center rounded-md" />
             </div>
             <div className="w-full grid grid-cols-5 pt-2 pb-2 pl-2 pr-2">
                 <div className="col-span-3 w-full flex flex-col items-start justify-between">
