@@ -43,7 +43,7 @@ const SiteCard = ({ ...props }) => {
     return (
         <li
             key={id}
-            className="shadow-xl min-w-[330px] flex flex-col items-center justify-center p-2 mr-4 overflow-hidden rounded-8xs border border-solid border-black/20"
+            className="shadow-xl min-w-[380px] flex flex-col items-center justify-center p-2 mr-4 overflow-hidden rounded-md border border-solid border-black/20"
         >
             <div className="w-full aspect-[4/3] overflow-hidden">
                 <Image
@@ -51,12 +51,12 @@ const SiteCard = ({ ...props }) => {
                     width={300}
                     height={300}
                     alt="title"
-                    className="w-full h-full object-cover object-center rounded-8xs"
+                    className="w-full h-full object-cover object-center rounded-md"
                 />
             </div>
             <div className="w-full flex items-center justify-between mt-5">
                 <Link href={link}>
-                    <h3 className="text-base font-medium">{title}</h3>
+                    <h3 className="text-lg font-medium">{title}</h3>
                 </Link>
                 <div className="flex items-center justify-center font-medium">
                     <span>
@@ -83,7 +83,7 @@ const SiteCard = ({ ...props }) => {
 
 const NearbySites = () => {
     return (
-        <section className="mt-24 md:mt-10 mx-12 md:mx-24 flex flex-col items-start overflow-hidden">
+        <section className="mt-24 md:mt-10 mx-5 md:mx-24 flex flex-col items-start overflow-hidden">
             <h2 className="text-xl font-semibold text-black/80 capitalize">
                 tourist sites nearby
             </h2>

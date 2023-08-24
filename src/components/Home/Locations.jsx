@@ -36,9 +36,9 @@ const LocationCard = ({ ...props }) => {
   const { id, title, description, img, link } = props;
 
   return (
-    <li key={id} className="shadow-lg min-w-[550px] flex items-center justify-center p-2 mr-4 overflow-hidden rounded-md border border-solid border-black/20">
+    <li key={id} className="shadow-xl min-w-[550px] flex items-center justify-center p-2 mr-4 overflow-hidden rounded-md border border-solid border-black/20">
       <div className="w-1/2 aspect-square overflow-hidden">
-        <Image src={img} alt="title" width={300} height={300} className="w-full h-full object-cover object-center rounded-8xs" />
+        <Image src={img} alt="title" width={300} height={300} className="w-full h-full object-cover object-center rounded-md" />
       </div>
       <div className="w-1/2 flex flex-col mx-5">
         <Link href={link}><h3 className="text-xl font-semibold">{title}</h3></Link>
@@ -50,7 +50,7 @@ const LocationCard = ({ ...props }) => {
 
 const Locations = () => {
   return (
-    <section className="mt-24 md:mt-16 mx-12 md:mx-24 flex flex-col items-start overflow-x-hidden">
+    <section className="mt-24 md:mt-16 mx-5 md:mx-24 flex flex-col items-start overflow-x-hidden">
       <h2 className="text-xl font-semibold text-black/80 capitalize">Our Locations</h2>
       <ul className="mt-6 w-full flex items-stretch justify-start overflow-x-auto md:overflow-x-scroll scroll-m-10">
         {locationData.map((item) => {
