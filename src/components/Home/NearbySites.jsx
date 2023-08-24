@@ -83,7 +83,7 @@ const SiteCard = ({ ...props }) => {
 
 const NearbySites = () => {
     return (
-        <section className="mt-24 md:mt-10 mx-12 md:mx-24 flex flex-col items-start overflow-hidden">
+        <section className="mt-24 md:mt-10 mx-5 md:mx-24 flex flex-col items-start overflow-hidden">
             <h2 className="text-xl font-semibold text-black/80 capitalize">
                 tourist sites nearby
             </h2>

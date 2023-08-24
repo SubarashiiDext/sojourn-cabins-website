@@ -50,7 +50,7 @@ const LocationCard = ({ ...props }) => {
 
 const Locations = () => {
   return (
-    <section className="mt-24 md:mt-16 mx-12 md:mx-24 flex flex-col items-start overflow-x-hidden">
+    <section className="mt-24 md:mt-16 mx-5 md:mx-24 flex flex-col items-start overflow-x-hidden">
       <h2 className="text-xl font-semibold text-black/80 capitalize">Our Locations</h2>
       <ul className="mt-6 w-full flex items-stretch justify-start overflow-x-auto md:overflow-x-scroll scroll-m-10">
         {locationData.map((item) => {

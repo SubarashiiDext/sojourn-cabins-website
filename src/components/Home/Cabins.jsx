@@ -104,7 +104,7 @@ const CabinCard = ({ ...props }) => {
 
 const Cabins = () => {
     return (
-        <section className="mt-24 md:mt-10 mx-12 md:mx-24 flex flex-col items-start overflow-x-hidden">
+        <section className="mt-24 md:mt-10 mx-5 md:mx-24 flex flex-col items-start overflow-x-hidden">
             <div className="w-full flex items-center justify-between">
                 <h2 className="text-xl font-semibold text-black/80 capitalize">Our Featured cabins</h2>
                 <Link href="/" className="text-black font-medium hover:text-blue-400 transition duration-300">Show all</Link>
