@@ -4,13 +4,14 @@ import {MdOutlineCancel, MdOutlineLocationOn} from 'react-icons/md';
 import {CiCalendar} from 'react-icons/ci'
 import { BsFillCaretDownFill,BsFillCaretUpFill } from "react-icons/bs";
 import ResultsCards from '@/components/Modules/search-results-cards/page';
+import BookingAlert from '@/components/PromoAlert/BookingAlert';
 
 
 
 export default function searchResults() {
   return (
     <div className='pt-[86px]'>
-      <div className='min-h-[60px] bg-[#F8F2DA] relative flex justify-center'>
+      {/* <div className='min-h-[60px] bg-[#F8F2DA] relative flex justify-center'>
       
         <div className='gap-1  flex md:flex-row justify-center items-center flex-col '>
           <p className='font-bold'>Check out our special packages</p>
@@ -21,7 +22,10 @@ export default function searchResults() {
           <MdOutlineCancel className='w-7 h-7 text-gray-300 hover:text-gray-500 ' /> 
         </div>
         
-      </div>
+      </div> */}
+
+      <BookingAlert/>
+
 
       <div className='w-[80%] mx-auto'>
         <h1 className='font-bold text-lg'>
