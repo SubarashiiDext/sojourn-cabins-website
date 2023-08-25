@@ -6,9 +6,10 @@ import ContainerWrapper from "@/components/UI/ContainerWrapper ";
 import RateSearch from "@/components/UI/RateSearch";
 import UiWrapper from "@/components/UI/UiWrapper";
 import { AllLocations, cabins, extras } from "@/utils/data";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import BookingAlert from "@/components/PromoAlert/BookingAlert";
 import jj from "@/components/UI/jj";
+import Modal from "@/components/Modal/Modal";
 // import PackageSearch from "@/components/OurPackage/PackageSearch";
 
 // const onChange = (date, dateString) => {
@@ -17,9 +18,24 @@ import jj from "@/components/UI/jj";
 
 // import { DatePicker } from "antd";
 
+// function to close modal & redirect to /book
+
 export default function Book() {
   const [data, setData] = useState(AllLocations[0]);
   const [query, setQuery] = useState("");
+
+  // humburgr has not been opened
+  const [showModal, setShowModal] = useState(false); // the
+
+  const closeModal = () => {
+    //     setShowModal(false);
+    // window.location.href = "/Book";
+    setShowModal(false);
+  };
+
+  useEffect(() => {
+    setShowModal(true);
+  }, []);
 
   const search = (query) => {
     const newLocation = AllLocations.find((location) =>
@@ -28,9 +44,12 @@ export default function Book() {
     setQuery(query);
     setData(newLocation);
   };
+
   return (
-    <div className='pt-20'>
-      <div><BookingAlert /></div>
+    <div className="pt-20">
+      <div>
+        <BookingAlert />
+      </div>
       <div>
         <ContainerWrapper>
           <h1 className="font-semibold text-xl">Book your stay</h1>
@@ -67,6 +86,9 @@ export default function Book() {
           </div>
         </ContainerWrapper>
       </div>
+
+      {/* modal */}
+      <Modal isVisible={showModal} onClose={closeModal} />
     </div>
   );
 }
