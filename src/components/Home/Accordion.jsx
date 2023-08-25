@@ -6,8 +6,8 @@ const Accordion = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full rounded-md">
-      <div className="bg-[#F8F2DA] cursor-pointer p-4 flex items-center justify-between" onClick={() => setIsOpen(!isOpen)}>
+    <div className="w-full flex flex-col rounded-md">
+      <div className="bg-[#F8F2DA] w-full flex cursor-pointer p-4 items-center justify-between" onClick={() => setIsOpen(!isOpen)}>
         <h2 className="font-semibold">{title}</h2>
         <div className={cx('w-4 transition-all ease duration-200', isOpen ? "rotate-180" : "rotate-0")}>
           <svg
