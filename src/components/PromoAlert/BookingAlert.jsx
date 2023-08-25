@@ -3,7 +3,7 @@ import React from "react";
 
 export default function BookingAlert ()  {
   return (
-    <div>
+    <div className="">
       <div className='min-h-[60px] bg-[#F8F2DA] relative flex justify-center'>
       
       <div className='gap-1  flex md:flex-row justify-center items-center flex-col '>
