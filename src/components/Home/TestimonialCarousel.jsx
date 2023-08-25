@@ -9,7 +9,7 @@ function SampleNextArrow(props) {
     return (
         <div
             className={
-                "flex cursor-pointer items-center justify-center bg-primary p-1 aspect-square text-light  absolute top-1/2 -translate-y-1/2 -right-10 w-20 hw-20 bg-blue-500 rounded-full fill-white"
+                "flex cursor-pointer items-center justify-center bg-primary p-1 aspect-square text-light absolute top-1/2 -translate-y-1/2 -right-10 w-20 hw-20 bg-blue-500 rounded-full fill-white"
             }
             onClick={onClick}
         >
@@ -87,15 +87,15 @@ export default function TestimonialCarousel({ data }) {
         adaptiveHeight: true,
     };
     return (
-        <div className="w-[80%] h-auto z-10 bg-white p-2 rounded-md shadow-xl">
+        <div className="w-[90%] md:w-[90%] py-2 md:py-0 h-auto z-10 bg-white p-2 rounded-md shadow-xl">
             <Slider {...settings}>
                 {data.map((item) => {
                     return (
                         <div
                             key={item.id}
-                            className="w-full !grid grid-cols-10 items-center"
+                            className="w-full h-full md:!grid md:grid-cols-10 flex flex-col items-center"
                         >
-                            <div className="col-span-4 aspect-square">
+                            <div className="col-span-4 aspect-square py-2">
                                 <Image
                                     src={item.img}
                                     alt={item.name}
@@ -104,7 +104,7 @@ export default function TestimonialCarousel({ data }) {
                                     className="w-full h-full object-cover object-center rounded-md"
                                 />
                             </div>
-                            <div className="col-span-6 flex flex-col items-start justify-center p-12">
+                            <div className="md:col-span-6 flex flex-col items-start justify-center p-6 md:p-12">
                                 <p className="text-xl text-black/80">{item.text}</p>
                                 <div className="mt-4 text-xl text-blue-500">
                                     <span className="font-semibold">- {item.name}</span>,{" "}
