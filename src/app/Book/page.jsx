@@ -7,6 +7,7 @@ import RateSearch from "@/components/UI/RateSearch";
 import UiWrapper from "@/components/UI/UiWrapper";
 import { AllLocations, cabins, extras } from "@/utils/data";
 import React, { useState } from "react";
+import BookingAlert from "@/components/PromoAlert/BookingAlert";
 import jj from "@/components/UI/jj";
 // import PackageSearch from "@/components/OurPackage/PackageSearch";
 
@@ -28,8 +29,8 @@ export default function Book() {
     setData(newLocation);
   };
   return (
-    <>
-      <div>{/* <BookingAlert /> */}</div>
+    <div className='pt-20'>
+      <div><BookingAlert /></div>
       <div>
         <ContainerWrapper>
           <h1 className="font-semibold text-xl">Book your stay</h1>
@@ -66,6 +67,6 @@ export default function Book() {
           </div>
         </ContainerWrapper>
       </div>
-    </>
+    </div>
   );
 }
