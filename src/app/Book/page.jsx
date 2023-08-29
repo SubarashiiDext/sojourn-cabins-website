@@ -52,7 +52,7 @@ export default function Book() {
       </div>
       <div>
         <ContainerWrapper>
-          <h1 className="font-semibold text-xl">Book your stay</h1>
+          {/* <h1 className="font-semibold text-xl">Book your stay</h1> */}
           <div>
             <UiWrapper>
               <BookingForms />

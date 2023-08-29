@@ -21,7 +21,7 @@ const BookingForms = () => {
   return (
     <div className="pb-4 md:pb-20">
       <h2 className="text-[#60f] font-bold text-[20px] pt-6 pb-4 text-center">
-        THE BOOKING FORM
+        BOOK YOUR STAY
       </h2>
 
       {/* form section  */}
