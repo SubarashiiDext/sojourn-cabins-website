@@ -96,7 +96,7 @@ export default function Navbar() {
             <Link
               href="/Book"
               className="hover:text-grey-400 py-2 lg:hidden"
-              // onClick={() => setShowModal(true)}
+             zq
             >
               BOOK
             </Link>
