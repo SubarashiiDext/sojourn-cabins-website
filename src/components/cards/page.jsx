@@ -5,6 +5,7 @@ import { cabinData } from "../Modules/card-dummy-data/page";
 export default function Cards() {
   return (
     <div>
+
       <div className=" mt-2 mb-2">
         <div className=" mx-auto flex flex-wrap justify-center gap-4 ">
           {cabinData.map((cabin) => (
