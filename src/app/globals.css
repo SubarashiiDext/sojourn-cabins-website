@@ -1,6 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-  font-family: Roboto, Arial,;
+* {
+  font-family: Roboto, Arial;
+}
+
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
 }
