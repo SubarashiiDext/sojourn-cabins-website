@@ -61,6 +61,10 @@ const PackagePage = () => {
             Disconnect and unwind in the privacy of your own cabin.
           </h3>
         </div>
+
+        <div>
+          
+        </div>
       </ContainerWrapper>
     </div>
   );

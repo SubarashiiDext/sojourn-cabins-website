@@ -10,6 +10,7 @@ import React, { useEffect, useState } from "react";
 import BookingAlert from "@/components/PromoAlert/BookingAlert";
 import jj from "@/components/UI/jj";
 import Modal from "@/components/Modal/Modal";
+// import ModalScroll from "@/components/Modal/ModalScroll";
 // import PackageSearch from "@/components/OurPackage/PackageSearch";
 
 // const onChange = (date, dateString) => {
@@ -28,14 +29,20 @@ export default function Book() {
   const [showModal, setShowModal] = useState(false); // the
 
   const closeModal = () => {
-    //     setShowModal(false);
-    // window.location.href = "/Book";
     setShowModal(false);
   };
 
   useEffect(() => {
     setShowModal(true);
   }, []);
+
+  useEffect(() => {
+    if (showModal) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [showModal]);
 
   const search = (query) => {
     const newLocation = AllLocations.find((location) =>

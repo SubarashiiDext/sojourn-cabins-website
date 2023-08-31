@@ -1,8 +1,21 @@
 import React from "react";
 import { LiaTimesCircleSolid } from "react-icons/lia";
+import { modalData } from "@/utils/modalData";
+import Link from "next/link";
+import Image from "next/image";
 import ModalCard from "./ModalCard";
+// import ModalCarousel from "./ModalCarousel";
 
-const Modal = ({ isVisible, onClose }) => {
+const Modal = ({
+  isVisible,
+  onClose,
+  imgsrc,
+  title,
+  promo,
+  description,
+  id,
+  btn,
+}) => {
   if (!isVisible) return null;
 
   const handleCloseModal = (e) => {
@@ -10,25 +23,31 @@ const Modal = ({ isVisible, onClose }) => {
   };
 
   return (
-    <div
-      className="fixed px-2 md:pt-0 pt-6  inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center"
-      onClick={handleCloseModal}
-      id="close"
-    >
-      <div className=" w-full md:w-[600px]">
-        <div className="bg-white p-6 flex flex-col">
-          <button className="absolute bg-black rounded-full place-self-end mt-[-30px] mr-[-30px]">
-            <LiaTimesCircleSolid
-              size={25}
-              className="relative text-white rounded-full"
-              onClick={() => onClose()}
-            />
-          </button>
+    <div className="overlay flex justify-center items-center">
+      {/* <ModalCard modalData={modalData} /> */}
+      <section className="bg-white h-full max-h-[550px]  md:max-h-[400px] max-w-[700px] rounded-lg overflow-hidden border ">
+        <div className="py-1 flex justify-end rounded-t-lg px-1 cursor-pointer">
+          <LiaTimesCircleSolid
+            size={24}
+            onClick={handleCloseModal}
+            id="close"
+          />
+        </div>
+        <div className="p-5 overflow-y-scroll h-full">
           <div>
-            <ModalCard />
+            {modalData.map((modals) => (
+              <ModalCard
+                key={modals.id}
+                imgsrc={modals.imgsrc}
+                title={modals.title}
+                promo={modals.promo}
+                description={modals.description}
+                btn={modals.btn}
+              />
+            ))}
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
