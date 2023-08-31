@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {};
 
 module.exports = {
   images: {
-    domains: ['images.unsplash.com', 'plus.unsplash.com'],
+    domains: [
+      "images.unsplash.com",
+      "plus.unsplash.com",
+      "sojourn-cabins-bucket-staging.s3.amazonaws.com",
+    ],
   },
 };

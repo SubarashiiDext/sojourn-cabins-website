@@ -5,6 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import {IoMdClose} from "react-icons/io";
 
 
 import Modal from "../Modal/Modal";
@@ -67,10 +68,10 @@ export default function Navbar() {
           {/* mobile button goes here */}
           <button
             onClick={handleClick}
-            className="lg:hidden flex flex-col justify-center items-end min-w-[-100px] "
+            className="lg:hidden flex flex-col justify-center items-end min-w-[-100px] text-white "
           >
-            {open ? "" : ""}
-            <GiHamburgerMenu size={25} className="" />
+            {open ?  <IoMdClose size={30} className="" /> :<GiHamburgerMenu size={25} className="text-white" />}
+            
           </button>
         </div>
 
