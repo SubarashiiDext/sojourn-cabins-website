@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {IoMdClose} from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
 
 import Modal from "../Modal/Modal";
 
@@ -44,7 +44,7 @@ export default function Navbar() {
               <Link href="/" className="hover:bg-grey-400">
                 HOME
               </Link>
-              <Link href="/PropertyDetails" className="hover:bg-grey-400">
+              <Link href="/About" className="hover:bg-grey-400">
                 ABOUT
               </Link>
               <Link
@@ -78,8 +78,8 @@ export default function Navbar() {
             onClick={handleClick}
             className="lg:hidden flex flex-col justify-center items-end min-w-[-100px] text-white "
           >
-            {open ?  <IoMdClose size={30} className="" /> :<GiHamburgerMenu size={25} className="text-white" />}
-            
+            {open ? <IoMdClose size={30} className="" /> : <GiHamburgerMenu size={25} className="text-white" />}
+
           </button>
         </div>
 
@@ -114,10 +114,10 @@ export default function Navbar() {
               TERMS & CONDITION
             </Link>
             <ul className="flex flex-col hover:text-blue-300 duration-300 ease-out items-center gap-2">
-              <li>LOGIN</li>
+              <li><a href="/Login">LOGIN</a></li>
 
               <li className=" bg-blue-600 font-bold py-1 px-3 rounded hover:bg-blue-300 hover:text-black transition duration-300">
-                SIGN UP
+                <a href="/SignUp">SIGN UP</a>
               </li>
             </ul>
           </div>
