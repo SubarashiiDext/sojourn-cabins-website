@@ -40,11 +40,11 @@ export default function Navbar() {
           </div>
 
           <div className=" items-center space-x-5 hidden lg:flex">
-            <div className=" text-white flex space-x-4 transition-all ease-in duration-500 ">
+            <div className=" text-white flex space-x-4 transition-all ease-in duration-500 cursor-pointer">
               <Link href="/" className="hover:bg-grey-400">
                 HOME
               </Link>
-              <Link href="/About" className="hover:bg-grey-400">
+              <Link href="/PropertyDetails" className="hover:bg-grey-400">
                 ABOUT
               </Link>
               <Link
@@ -62,13 +62,13 @@ export default function Navbar() {
               </Link>
             </div>
 
-            <div className="flex items-center space-x-5 font-bold">
+            <div className="flex items-center space-x-5 font-bold cursor-pointer">
               <span> | </span>
               <ul className="flex items-center space-x-2">
-                <li>LOGIN</li>
+                <li><a href="/Login">LOGIN</a></li>
 
                 <li className=" bg-blue-600 font-bold py-1 px-3 rounded hover:bg-blue-300 hover:text-black transition duration-300">
-                  SIGN UP
+                  <a href="/SignUp">SIGN UP</a>
                 </li>
               </ul>
             </div>
@@ -97,7 +97,7 @@ export default function Navbar() {
             <Link
               href="/Book"
               className="hover:text-grey-400 py-2 lg:hidden"
-             zq
+            // onClick={() => setShowModal(true)}
             >
               BOOK
             </Link>
@@ -113,7 +113,7 @@ export default function Navbar() {
             >
               TERMS & CONDITION
             </Link>
-            <ul className="flex flex-col  items-center gap-2">
+            <ul className="flex flex-col hover:text-blue-300 duration-300 ease-out items-center gap-2">
               <li>LOGIN</li>
 
               <li className=" bg-blue-600 font-bold py-1 px-3 rounded hover:bg-blue-300 hover:text-black transition duration-300">
