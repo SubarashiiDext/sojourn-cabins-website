@@ -5,7 +5,7 @@ import { BiLogoFacebook, BiLogoTwitter, BiLogoInstagram } from "react-icons/bi";
 
 const Footer = () => {
     return (
-        <div className="w-full  bg-[#cddcf7] mt-3">
+        <div className="w-full  bg-[#cddcf7]">
             <div className="flex flex-col justify-between sm:w-[80%] sm:mx-auto sm:px-0 px-5 pt-2 pb-5 ">
                 <p className="mb-2 text-l text-blue-700 font-bold">NEWSLETTER &mdash;</p>
                 <p className="mb-1111111111 font-bold text-xl">Stay Up to Date</p>
