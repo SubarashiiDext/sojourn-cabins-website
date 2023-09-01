@@ -1,20 +1,26 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link";
 import React from "react";
+import { useMediaQuery } from "@react-hook/media-query";
+
 import Search from "../components/Home/Search";
 import Locations from "../components/Home/Locations";
 import Cabins from "../components/Home/Cabins";
 import BookingProcess from "../components/Home/BookingProcess";
 import Amenities from "../components/Home/Amenities";
 import ChefBooking from "../components/Home/ChefBooking";
+import DesktopGallery from "@/components/Home/DesktopGallery";
 import Gallery from "../components/Home/Gallery";
 import NearbySites from "../components/Home/NearbySites";
 import Testimonials from "../components/Home/Testimonials";
 import FaqSection from "../components/Home/FaqSection";
 
 export default function Home() {
-  return (
+  const isMobile = useMediaQuery("(max-width: 640px)");
 
+  return (
     <div>
       <div className="my-8 relative w-full h-[calc(100vh-5rem)] overflow-hidden bg-gray-600 space-y-2" >
         <Image className="my-4 object-cover object-center absolute mix-blend-overlay" src="/asset/coverImage.jpg" alt="Bg Img" fill={true} />
@@ -48,7 +54,13 @@ export default function Home() {
         <ChefBooking />
       </div>
       <div>
-        <Gallery />
+        {isMobile ? (
+          // Render Gallery.jsx on mobile screens
+          <Gallery />
+        ) : (
+          // Render DesktopGallery.jsx on medium screens and larger
+          <DesktopGallery />
+        )}
       </div>
       <div>
         <NearbySites />
